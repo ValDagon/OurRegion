@@ -5,36 +5,51 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:st="clr-namespace:Plugin.SharedTransitions;assembly=Plugin.SharedTransitions"
              xmlns:vm="clr-namespace:MFC.ViewModel"
-             mc:Ignorable="d"
+             mc:Ignorable="d"           
              x:Class="MFC.Views.MainPagee">
     <ContentPage.BindingContext>
         <vm:MainViewModel x:Name="vm"/>
     </ContentPage.BindingContext>
+    
     <Grid>
         <Grid RowDefinitions="Auto, Auto, Auto, *" RowSpacing="30" Padding="30">
             <Grid ColumnDefinitions="Auto, *, Auto">
                 <ImageButton Source="menu.png" BackgroundColor="Transparent" VerticalOptions="Center" 
                              HeightRequest="24" WidthRequest="24" Clicked="MenuTapped"/>
-                <Image Grid.Column="1"  Source="Document.png"
-                       VerticalOptions="Center" HorizontalOptions="Center"/>
+                <!--<Image Grid.Column="1"  Source="Document.png"
+                       VerticalOptions="Center" HorizontalOptions="Center"/>-->
                 <Image Grid.Column="2" Source="More.png" VerticalOptions="Center" HeightRequest="24" WidthRequest="24"/>
             </Grid>
-            <Grid Grid.Row="1" ColumnDefinitions="*, Auto" ColumnSpacing="15">
-                <Frame Padding="10" BackgroundColor="#E6EAEA" CornerRadius="25" BorderColor="Transparent">
-                    <StackLayout Spacing="15" Orientation="Horizontal">
-                        <Path Fill="#2D2942" Opacity="0.5" Data="M17.8901 16.8296L12.6613 11.6007C13.653 10.3764 14.25 8.81977 14.25 7.12503C14.25 3.19631 11.0537 0 7.12499 0C3.19627 0 0 3.19631 0 7.12503C0 11.0537 3.19631 14.2501 7.12503 14.2501C8.81977 14.2501 10.3764 13.653 11.6007 12.6613L16.8296 17.8902C16.9761 18.0366 17.2135 18.0366 17.36 17.8902L17.8902 17.3599C18.0366 17.2135 18.0366 16.976 17.8901 16.8296ZM7.12503 12.75C4.02322 12.75 1.50001 10.2268 1.50001 7.12503C1.50001 4.02322 4.02322 1.50001 7.12503 1.50001C10.2268 1.50001 12.75 4.02322 12.75 7.12503C12.75 10.2268 10.2268 12.75 7.12503 12.75Z" 
-                            Aspect="Uniform" VerticalOptions="Center" HeightRequest="18" WidthRequest="18"/>
-                        <Label Text="Search" TextColor="#2D2942" FontSize="15" Opacity="0.5" VerticalOptions="Center" 
-                               HorizontalOptions="Center"/>
-                    </StackLayout>
-                </Frame>
-                <Grid Grid.Column="1" HorizontalOptions="End">
-                    <Ellipse HeightRequest="42" WidthRequest="42" Fill="White"/>
-                    <Image Source="Filter.png" VerticalOptions="Center" HeightRequest="20" WidthRequest="20"/>
-                </Grid>
-            </Grid>
+
+            <CollectionView Grid.Row="1" HeightRequest="135" WidthRequest="135"  ItemsSource="{Binding MenuList}">
+
+                <CollectionView.ItemsLayout >
+                    <GridItemsLayout Orientation="Horizontal" Span="1" />
+                </CollectionView.ItemsLayout>
+                <CollectionView.EmptyView>
+                    <Label Text="No Item found." TextColor="Gray" HorizontalOptions="Center" VerticalOptions="Center"/>
+                </CollectionView.EmptyView>
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid Padding="0,0,5,0" >
+                            <StackLayout Padding="10,10,10,10" Spacing="10" BackgroundColor="#E44E34" >
+
+
+
+                                <Label Text="{Binding Name}" TextColor="White"  FontSize="14" VerticalOptions="Start" HorizontalOptions="Start" Grid.Row="0" FontFamily="Lora"/>
+                                <Label Text="{Binding Name1}" TextColor="White" FontSize="14" VerticalOptions="Start" HorizontalOptions="Center" Grid.Row="1" FontFamily="Lora" Margin="0,0,10,0" TextDecorations="Strikethrough"/>
+                                <Label Text="{Binding Name2}" TextColor="White" FontSize="20" VerticalOptions="Start" HorizontalOptions="Center" Grid.Row="1" FontFamily="PlayfairDisplay" Margin="0,0,10,0"/>
+
+
+                            </StackLayout>
+                        </Grid>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+                
+           
             <Grid Grid.Row="2" ColumnDefinitions="*, Auto" ColumnSpacing="15">
-                <Label Text="Popular" TextColor="#2D2942" FontSize="20" FontAttributes="Bold" VerticalOptions="Center" />
+                <Label Text="Уведомления" TextColor="#2D2942" FontSize="20" FontAttributes="Bold" VerticalOptions="Center" FontFamily="Lora" />
                 <Image Grid.Column="1" Source="threeDots.png" VerticalOptions="Center" HeightRequest="20" 
                        WidthRequest="20"/>
             </Grid>
@@ -48,16 +63,24 @@
                 </CollectionView.EmptyView>
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
-                        <Grid RowDefinitions="*, Auto" BackgroundColor="White" Padding="0,0,0,30" >
-                            <Image Source="{Binding Image}" WidthRequest="400"  Aspect="AspectFill" HorizontalOptions="End" VerticalOptions="Start"
+                        <Grid RowDefinitions="*, Auto" ColumnDefinitions="50,*,Auto" BackgroundColor="White" Padding="0,0,0,10" >
+                            <Image Source="{Binding Image}" WidthRequest="20"  Aspect="AspectFill" HorizontalOptions="Center" Grid.Row="0" Grid.RowSpan="2" VerticalOptions="Center"
                                        st:Transition.Name="WatchImage"
                                        st:Transition.Group="{Binding Name}"/>
-                            <Label Text="{Binding Name}" TextColor="#2D2942" FontSize="14" VerticalOptions="Start" HorizontalOptions="Start" Grid.Row="1" Margin="10,0,0,0"/>
-                            <Label Text="{Binding Model}" TextColor="#2D2942" FontSize="14" Opacity="0.5" VerticalOptions="Start" HorizontalOptions="End" Grid.Row="1" Margin="0,0,10,0"/>
+                            
+                            <Label Text="{Binding Name}" TextColor="#2D2942" FontSize="14" VerticalOptions="Start" HorizontalOptions="Start" Grid.Row="0" Grid.Column="1" Margin="0,10,0,0" FontFamily="Lora"/>
+                            <Label Text="{Binding Model}" TextColor="#2D2942" FontSize="14" Opacity="0.5" VerticalOptions="Start" HorizontalOptions="Start" Grid.Row="1" Grid.Column="1" Margin="0,0,10,0" FontFamily="Lora"/>
+                            <Label Text="{Binding Description}" TextColor="#2D2942" FontSize="14" Opacity="0.5" VerticalOptions="Start" HorizontalOptions="End" Grid.Row="0" Grid.Column="2" Margin="0,10,10,0" FontFamily="Lora"/>
+                            <Label Text="{Binding Description1}" TextColor="#2D2942" FontSize="14" Opacity="0.5" VerticalOptions="Start" HorizontalOptions="End" Grid.Row="1" Grid.Column="2" Margin="0,0,10,0" FontFamily="Lora"/>
                         </Grid>
                     </DataTemplate>
                 </CollectionView.ItemTemplate>
             </CollectionView>
+            <Grid Grid.Row="3">
+                <Expander>
+                    <Label Text="322"/>
+                </Expander>
+            </Grid>
         </Grid>
         <Grid x:Name="MenuGrid" IsVisible="False">
             <BoxView x:Name="MenuOverlay" BackgroundColor="Black" Opacity="0.35">

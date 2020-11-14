@@ -13,10 +13,12 @@ namespace MFC.ViewModel
         public MainViewModel()
         {
             Products = GetProducts();
+            MenuList = GetMenus();
 
         }
 
         private Product selectedProduct;
+
 
         public Product SelectedProduct
         {
@@ -24,6 +26,29 @@ namespace MFC.ViewModel
             set { selectedProduct = value; }
         }
 
+        private Menu selectedMenu;
+
+        public Menu SelectedMenu
+        {
+            get { return selectedMenu; }
+            set { selectedMenu = value; }
+        }
+         private ObservableCollection<Menu> menuList;
+        public ObservableCollection<Menu> MenuList
+        {
+            get { return menuList; }
+            set { menuList = value; }
+        }
+        private ObservableCollection<Menu> GetMenus()
+        {
+            return new ObservableCollection<Menu>
+            {
+                new Menu { Name = "Оплата госпошлин -30%", Name1 = "1 200 Р", Name2 ="850 Р"},
+                new Menu { Name = "Оплата госпошлин -30%", Name1 = "1 200 Р", Name2 ="850 Р"},
+                new Menu { Name = "Оплата госпошлин -30%g", Name1 = "1 200 Р", Name2 ="850 Р"},
+                new Menu { Name = "Оплата госпошлин -30%", Name1 = "1 200 Р", Name2 ="850 Р"}
+            };
+        }
 
         private ObservableCollection<Product> products;
         public ObservableCollection<Product> Products
@@ -44,10 +69,10 @@ namespace MFC.ViewModel
         {
             return new ObservableCollection<Product>
             {
-                new Product { Name = "",  Image = "", Model = "", Description = ""},
-                new Product { Name = "",  Image = "", Model = "", Description = ""},
-                new Product { Name = "",  Image = "", Model = "", Description = ""},
-                new Product { Name = "",  Image = "", Model = "", Description = ""}
+                new Product { Name = "Запись на услугу принята",  Image = "Tick.png", Model = "Получение загранпаспорта", Description = "16.11.20", Description1 = "09:00"},
+                new Product { Name = "Запись на услугу принята",  Image = "Points.png", Model = "Получение загранпаспорта", Description = "16.11.20", Description1 = "09:00"},
+                new Product { Name = "Запись на услугу принята",  Image = "Tick.png", Model = "Получение загранпаспорта", Description = "16.11.20", Description1 = "09:00"},
+                new Product { Name = "Запись на услугу принята",  Image = "Tick.png", Model = "Получение загранпаспорта", Description = "16.11.20", Description1 = "09:00"}
                 };
         }
 
@@ -66,7 +91,16 @@ namespace MFC.ViewModel
         public string Model { get; set; }
         public string Image { get; set; }
         public string Description { get; set; }
+        public string Description1 { get; set; }
     }
+
+    public class Menu
+    {
+        public string Name { get; set; }
+        public string Name1 { get; set; }
+        public string Name2 { get; set; }
+    }
+
 
 
 }

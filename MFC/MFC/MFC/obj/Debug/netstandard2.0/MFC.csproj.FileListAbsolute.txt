@@ -7,13 +7,13 @@ C:\Users\HP\Desktop\MFC\OurRegion\MFC\MFC\MFC\obj\Debug\netstandard2.0\Views\Mai
 C:\Users\HP\Desktop\MFC\OurRegion\MFC\MFC\MFC\obj\Debug\netstandard2.0\MFC.AssemblyInfoInputs.cache
 C:\Users\HP\Desktop\MFC\OurRegion\MFC\MFC\MFC\obj\Debug\netstandard2.0\MFC.AssemblyInfo.cs
 C:\Users\HP\Desktop\MFC\OurRegion\MFC\MFC\MFC\obj\Debug\netstandard2.0\Views\Page1.xaml.g.cs
-C:\Users\HP\Desktop\MFC\OurRegion\MFC\MFC\MFC\obj\Debug\netstandard2.0\MFC.csproj.CoreCompileInputs.cache
 C:\Users\HP\Desktop\MFC\OurRegion\MFC\MFC\MFC\bin\Debug\netstandard2.0\ref\MFC.dll
 C:\Users\HP\Desktop\MFC\OurRegion\MFC\MFC\MFC\bin\Debug\netstandard2.0\MFC.pdb
 C:\Users\HP\Desktop\MFC\OurRegion\MFC\MFC\MFC\obj\Debug\netstandard2.0\Views\DetailsPage.xaml.g.cs
-C:\Users\HP\Desktop\MFC\OurRegion\MFC\MFC\MFC\obj\Debug\netstandard2.0\XamlC.stamp
 C:\Users\HP\Desktop\MFC\OurRegion\MFC\MFC\MFC\obj\Debug\netstandard2.0\MFC.dll
 C:\Users\HP\Desktop\MFC\OurRegion\MFC\MFC\MFC\obj\Debug\netstandard2.0\ref\MFC.dll
 C:\Users\HP\Desktop\MFC\OurRegion\MFC\MFC\MFC\obj\Debug\netstandard2.0\MFC.pdb
 C:\Users\HP\Desktop\MFC\OurRegion\MFC\MFC\MFC\obj\Debug\netstandard2.0\Views\Page2.xaml.g.cs
 C:\Users\HP\Desktop\MFC\OurRegion\MFC\MFC\MFC\obj\Debug\netstandard2.0\Views\Page3.xaml.g.cs
+C:\Users\HP\Desktop\MFC\OurRegion\MFC\MFC\MFC\obj\Debug\netstandard2.0\MFC.csproj.CoreCompileInputs.cache
+C:\Users\HP\Desktop\MFC\OurRegion\MFC\MFC\MFC\obj\Debug\netstandard2.0\XamlC.stamp
