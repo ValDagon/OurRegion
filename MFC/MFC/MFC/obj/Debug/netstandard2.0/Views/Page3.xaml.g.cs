@@ -17,8 +17,12 @@ namespace MFC.Views {
     public partial class Page3 : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
+        private global::MFC.ViewModel.MainViewModel vm;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
             global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(Page3));
+            vm = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::MFC.ViewModel.MainViewModel>(this, "vm");
         }
     }
 }

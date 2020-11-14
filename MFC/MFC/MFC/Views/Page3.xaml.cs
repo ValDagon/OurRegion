@@ -16,5 +16,10 @@ namespace MFC.Views
         {
             InitializeComponent();
         }
+
+        private void MenuTapped(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -46,12 +46,12 @@
                     </DataTemplate>
                 </CollectionView.ItemTemplate>
             </CollectionView>
-                
-           
+
+
             <Grid Grid.Row="2" ColumnDefinitions="*, Auto" ColumnSpacing="15">
                 <Label Text="Уведомления" TextColor="#2D2942" FontSize="20" FontAttributes="Bold" VerticalOptions="Center" FontFamily="Lora" />
-                <Image Grid.Column="1" Source="threeDots.png" VerticalOptions="Center" HeightRequest="20" 
-                       WidthRequest="20"/>
+                <Label Text="Услуги" TextColor="#2D2942" FontSize="20" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="End" FontFamily="Lora" />
+                <Label BackgroundColor="#bababa"  HorizontalOptions="FillAndExpand" VerticalOptions="End" HeightRequest="1" Margin="0,40,0,0" />
             </Grid>
             <CollectionView Grid.Row="3" SelectionMode="Single" ItemsSource="{Binding Products}"
                             SelectedItem="{Binding SelectedProduct}" SelectionChanged="ProductSelected">
@@ -77,6 +77,19 @@
                 </CollectionView.ItemTemplate>
             </CollectionView>
             
+            <Grid Grid.Row="4" RowDefinitions="*,*, Auto">
+                <Label Text="Мониторинг" Grid.Row="0" TextColor="#2D2942" FontSize="20" FontAttributes="Bold" VerticalOptions="Start" FontFamily="Lora" />
+                <Label BackgroundColor="#bababa" Grid.Row="0" HorizontalOptions="FillAndExpand" VerticalOptions="Center" HeightRequest="1" Margin="0,0,0,0" />
+                <StackLayout Grid.Row="1" VerticalOptions="Start">
+                    <Label Text="Офис:" FontSize="14" FontFamily="Lora"/>
+                    <Label Text="МФЦ для бизнеса: Шарлыкское шоссе, 1/2(6 галерея мегамаолла 'Армада',центр 'Мой бизнес')" FontSize="14" FontFamily="Lora" />
+                </StackLayout>
+                <StackLayout Grid.Row="2" Orientation="Horizontal" Spacing="50" VerticalOptions="Start">
+                    <Label Text="Загруженность:" HorizontalOptions="Start" FontSize="14" FontFamily="Lora" VerticalOptions="End"/>
+                    <Label Text="16 человек" HorizontalOptions="Start" FontSize="14" FontFamily="Lora" VerticalOptions="End"/>
+                    <Image Source="icon101.png" HorizontalOptions="Start"  VerticalOptions="End"/>
+                </StackLayout>
+            </Grid>
         </Grid>
         <Grid x:Name="MenuGrid" IsVisible="False">
             <BoxView x:Name="MenuOverlay" BackgroundColor="Black" Opacity="0.35">
@@ -84,7 +97,7 @@
                     <TapGestureRecognizer Tapped="OverlayTapped"/>
                 </BoxView.GestureRecognizers>
             </BoxView>
-            <Grid x:Name="MenuView" WidthRequest="260" BackgroundColor="#4A2015" 
+            <Grid x:Name="MenuView" WidthRequest="260" BackgroundColor="#FFFFFF" 
                   HorizontalOptions="Start" TranslationX="-260">
                 <Grid.Clip>
                     <PathGeometry Figures="M0,0V511.043H140.714l86.992-116.012V0Z"/>
@@ -96,7 +109,7 @@
                                         FontFamily="Lora"/>
                     <Label Text="Алексеевич" Grid.Column="1" Grid.Row="1" FontSize="14" VerticalOptions="Center" TextColor="Gray"
                                         FontFamily="Lora"/>
-                    <Label Text="Редактировать" TextColor="White" Grid.Column="1" Grid.Row="2" FontSize="12" VerticalOptions="Center" TextDecorations="Underline"
+                    <Label Text="Редактировать" TextColor="Gray" Grid.Column="1" Grid.Row="2" FontSize="12" VerticalOptions="Center" TextDecorations="Underline"
                                         FontFamily="Lora"/>
                     <Label BackgroundColor="#bababa" Grid.Row="3" Grid.ColumnSpan="2" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" HeightRequest="2"  />
                     
@@ -107,8 +120,8 @@
                         <StackLayout.GestureRecognizers>
                             <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
                         </StackLayout.GestureRecognizers>
-                        <Button WidthRequest="140" HeightRequest="50" Text="Главная" TextColor="White" FontSize="20" VerticalOptions="Center" 
-                                        FontFamily="PlayfairDisplay" Background="#6E4D44" CornerRadius="14"/>
+                        <Button WidthRequest="140" HeightRequest="50" Text="Главная" TextColor="Black" FontSize="20" VerticalOptions="Center" 
+                                        FontFamily="PlayfairDisplay" Background="#E44E34" CornerRadius="14"/>
                         <!--<Label Text="Главная" TextColor="White" FontSize="20" VerticalOptions="Center" 
                                         FontFamily="PlayfairDisplay"/>-->
                     </StackLayout>
@@ -118,7 +131,7 @@
                             <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_1"/>
                         </StackLayout.GestureRecognizers>
                         
-                        <Label Text="Статус заявления" TextColor="White" FontSize="16" VerticalOptions="Center"
+                        <Label Text="Статус заявления" TextColor="Black" FontSize="16" VerticalOptions="Center"
                                         FontFamily="PlayfairDisplay"/>
                     </StackLayout>
 
@@ -126,13 +139,13 @@
                         <StackLayout.GestureRecognizers>
                             <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_2"/>
                         </StackLayout.GestureRecognizers>
-                        
-                        <Label Text="Информация МФЦ" TextColor="White" FontSize="16" VerticalOptions="Center"
+
+                        <Label Text="Информация МФЦ" TextColor="Black" FontSize="16" VerticalOptions="Center"
                                         FontFamily="PlayfairDisplay"/>
                     </StackLayout>
                     <Grid RowDefinitions="2, *" HorizontalOptions="Start" VerticalOptions="Start" Margin="0,50">
                         <Label BackgroundColor="#bababa" Grid.Row="0" Grid.ColumnSpan="2" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" HeightRequest="2" Margin="0,0,30,0"  />
-                        <Label Text="Выйти из аккаунта" Grid.Row="1" FontFamily="PlayfairDisplay" TextColor="White" FontSize="14" Margin="0,10"/>
+                        <Label Text="Выйти из аккаунта" Grid.Row="1" FontFamily="PlayfairDisplay" TextColor="Black" FontSize="14" Margin="0,10"/>
                     </Grid >
                     
                 </StackLayout>
