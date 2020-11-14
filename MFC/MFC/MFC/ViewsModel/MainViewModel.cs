@@ -13,7 +13,7 @@ namespace MFC.ViewModel
         public MainViewModel()
         {
             Products = GetProducts();
-            MenuList = GetMenus();
+
         }
 
         private Product selectedProduct;
@@ -23,15 +23,7 @@ namespace MFC.ViewModel
             get { return selectedProduct; }
             set { selectedProduct = value; }
         }
-        /// <summary>
-        private Menu selectedMenu;
 
-        public Menu SelectedMenu
-        {
-            get { return selectedMenu; }
-            set { selectedMenu = value; }
-        }
-        /// </summary>
 
         private ObservableCollection<Product> products;
         public ObservableCollection<Product> Products
@@ -40,28 +32,12 @@ namespace MFC.ViewModel
             set { products = value; }
         }
 
-        private ObservableCollection<Menu> menuList;
-        public ObservableCollection<Menu> MenuList
-        {
-            get { return menuList; }
-            set { menuList = value; }
-        }
+
 
         public void ShowDetails()
         {
             var page = new DetailsPage() { BindingContext = new DetailsViewModel { SelectedProduct = SelectedProduct } };
             App.Current.MainPage.Navigation.PushAsync(page);
-        }
-
-        private ObservableCollection<Menu> GetMenus()
-        {
-            return new ObservableCollection<Menu>
-            {
-                new Menu { Icon = "order.png", Name = "My Order"},
-                new Menu { Icon = "favorite.png", Name = "My WishList"},
-                new Menu { Icon = "shopping.png", Name = "Shopping Cart"},
-                new Menu { Icon = "settings.png", Name = "Settings"}
-            };
         }
 
         private ObservableCollection<Product> GetProducts()
@@ -92,9 +68,5 @@ namespace MFC.ViewModel
         public string Description { get; set; }
     }
 
-    public class Menu
-    {
-        public string Name { get; set; }
-        public string Icon { get; set; }
-    }
+
 }

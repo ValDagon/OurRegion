@@ -15,9 +15,9 @@
             <Grid ColumnDefinitions="Auto, *, Auto">
                 <ImageButton Source="menu.png" BackgroundColor="Transparent" VerticalOptions="Center" 
                              HeightRequest="24" WidthRequest="24" Clicked="MenuTapped"/>
-                <Label Grid.Column="1" Text="Watch Shop" TextColor="#2D2942" FontSize="20" FontAttributes="Bold" 
+                <Image Grid.Column="1"  Source="Document.png"
                        VerticalOptions="Center" HorizontalOptions="Center"/>
-                <Image Grid.Column="2" Source="Cart.png" VerticalOptions="Center" HeightRequest="24" WidthRequest="24"/>
+                <Image Grid.Column="2" Source="More.png" VerticalOptions="Center" HeightRequest="24" WidthRequest="24"/>
             </Grid>
             <Grid Grid.Row="1" ColumnDefinitions="*, Auto" ColumnSpacing="15">
                 <Frame Padding="10" BackgroundColor="#E6EAEA" CornerRadius="25" BorderColor="Transparent">
@@ -70,21 +70,45 @@
                 <Grid.Clip>
                     <PathGeometry Figures="M0,0V511.043H140.714l86.992-116.012V0Z"/>
                 </Grid.Clip>
-                <StackLayout Margin="30,100" Spacing="20" BindableLayout.ItemsSource="{Binding MenuList}">
-                    <BindableLayout.ItemTemplate>
-                        <DataTemplate>
-                            <StackLayout Orientation="Horizontal" Spacing="20">
-                                <Grid Grid.Row="2" HorizontalOptions="Start" VerticalOptions="Start"
-                                      HeightRequest="46" WidthRequest="46">
-                                    <Ellipse WidthRequest="46" HeightRequest="46" Fill="White" Opacity="0.5"/>
-                                    <Image Source="{Binding Icon}" WidthRequest="22" HeightRequest="22"
-                                            HorizontalOptions="Center" VerticalOptions="Center" />
-                                </Grid>
-                                <Label Text="{Binding Name}" TextColor="White" FontSize="16" VerticalOptions="Center"
+                <Grid ColumnDefinitions="*, Auto" RowDefinitions="*,*, Auto" HorizontalOptions="Start" VerticalOptions="Start" Margin="30,20">
+                    <Image Source="User.png" WidthRequest="50"  Grid.Column="0" Grid.RowSpan="3" />
+                    <Label Text="Блинов Кирилл" Grid.Column="1" Grid.Row="0" FontSize="14" VerticalOptions="Center" TextColor="Gray"
                                         FontFamily="NormalFont"/>
-                            </StackLayout>
-                        </DataTemplate>
-                    </BindableLayout.ItemTemplate>
+                    <Label Text="Алексеевич" Grid.Column="1" Grid.Row="1" FontSize="14" VerticalOptions="Center" TextColor="Gray"
+                                        FontFamily="NormalFont"/>
+                    <Label Text="Редактировать" TextColor="White" Grid.Column="1" Grid.Row="2" FontSize="12" VerticalOptions="Center" TextDecorations="Underline"
+                                        FontFamily="NormalFont"/>
+
+                </Grid>
+                <StackLayout Margin="30,130" Spacing="20">
+                    <StackLayout Orientation="Horizontal" Spacing="20">
+                        <StackLayout.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                        </StackLayout.GestureRecognizers>
+                        
+                        <Label Text="Главная" TextColor="White" FontSize="20" VerticalOptions="Center"
+                                        FontFamily="NormalFont"/>
+                    </StackLayout>
+
+                    <StackLayout Orientation="Horizontal" Spacing="20">
+                        <StackLayout.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_1"/>
+                        </StackLayout.GestureRecognizers>
+                        
+                        <Label Text="Статус заявления" TextColor="White" FontSize="16" VerticalOptions="Center"
+                                        FontFamily="NormalFont"/>
+                    </StackLayout>
+
+                    <StackLayout Orientation="Horizontal" Spacing="20">
+                        <StackLayout.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_2"/>
+                        </StackLayout.GestureRecognizers>
+                        
+                        <Label Text="Информация МФЦ" TextColor="White" FontSize="16" VerticalOptions="Center"
+                                        FontFamily="NormalFont"/>
+                    </StackLayout>
+
+                    <Label Text="Выйти из аккаунта" TextColor="White" FontSize="20" Margin="30,0,0,0"/>
                 </StackLayout>
             </Grid>
         </Grid>
