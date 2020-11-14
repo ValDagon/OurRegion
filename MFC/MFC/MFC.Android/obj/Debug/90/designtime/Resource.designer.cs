@@ -10956,11 +10956,20 @@ namespace MFC.Droid
 			// aapt resource value: 0x7F070002
 			public const int Icon0person = 2131165186;
 			
+			// aapt resource value: 0x7F070069
+			public const int icon101 = 2131165289;
+			
 			// aapt resource value: 0x7F070003
 			public const int Icon101 = 2131165187;
 			
-			// aapt resource value: 0x7F070069
-			public const int icon101 = 2131165289;
+			// aapt resource value: 0x7F07006A
+			public const int icon303 = 2131165290;
+			
+			// aapt resource value: 0x7F07006B
+			public const int icon304 = 2131165291;
+			
+			// aapt resource value: 0x7F07006C
+			public const int icon305 = 2131165292;
 			
 			// aapt resource value: 0x7F070066
 			public const int ic_mtrl_chip_checked_black = 2131165286;
@@ -10977,50 +10986,50 @@ namespace MFC.Droid
 			// aapt resource value: 0x7F070005
 			public const int More = 2131165189;
 			
-			// aapt resource value: 0x7F07006A
-			public const int mtrl_snackbar_background = 2131165290;
-			
-			// aapt resource value: 0x7F07006B
-			public const int mtrl_tabs_default_indicator = 2131165291;
-			
-			// aapt resource value: 0x7F07006C
-			public const int navigation_empty_icon = 2131165292;
-			
 			// aapt resource value: 0x7F07006D
-			public const int notification_action_background = 2131165293;
+			public const int mtrl_snackbar_background = 2131165293;
 			
 			// aapt resource value: 0x7F07006E
-			public const int notification_bg = 2131165294;
+			public const int mtrl_tabs_default_indicator = 2131165294;
 			
 			// aapt resource value: 0x7F07006F
-			public const int notification_bg_low = 2131165295;
+			public const int navigation_empty_icon = 2131165295;
 			
 			// aapt resource value: 0x7F070070
-			public const int notification_bg_low_normal = 2131165296;
+			public const int notification_action_background = 2131165296;
 			
 			// aapt resource value: 0x7F070071
-			public const int notification_bg_low_pressed = 2131165297;
+			public const int notification_bg = 2131165297;
 			
 			// aapt resource value: 0x7F070072
-			public const int notification_bg_normal = 2131165298;
+			public const int notification_bg_low = 2131165298;
 			
 			// aapt resource value: 0x7F070073
-			public const int notification_bg_normal_pressed = 2131165299;
+			public const int notification_bg_low_normal = 2131165299;
 			
 			// aapt resource value: 0x7F070074
-			public const int notification_icon_background = 2131165300;
+			public const int notification_bg_low_pressed = 2131165300;
 			
 			// aapt resource value: 0x7F070075
-			public const int notification_template_icon_bg = 2131165301;
+			public const int notification_bg_normal = 2131165301;
 			
 			// aapt resource value: 0x7F070076
-			public const int notification_template_icon_low_bg = 2131165302;
+			public const int notification_bg_normal_pressed = 2131165302;
 			
 			// aapt resource value: 0x7F070077
-			public const int notification_tile_bg = 2131165303;
+			public const int notification_icon_background = 2131165303;
 			
 			// aapt resource value: 0x7F070078
-			public const int notify_panel_notification_icon_bg = 2131165304;
+			public const int notification_template_icon_bg = 2131165304;
+			
+			// aapt resource value: 0x7F070079
+			public const int notification_template_icon_low_bg = 2131165305;
+			
+			// aapt resource value: 0x7F07007A
+			public const int notification_tile_bg = 2131165306;
+			
+			// aapt resource value: 0x7F07007B
+			public const int notify_panel_notification_icon_bg = 2131165307;
 			
 			// aapt resource value: 0x7F070006
 			public const int OfLargeSize = 2131165190;
@@ -11031,11 +11040,11 @@ namespace MFC.Droid
 			// aapt resource value: 0x7F070008
 			public const int Tick = 2131165192;
 			
-			// aapt resource value: 0x7F070079
-			public const int tooltip_frame_dark = 2131165305;
+			// aapt resource value: 0x7F07007C
+			public const int tooltip_frame_dark = 2131165308;
 			
-			// aapt resource value: 0x7F07007A
-			public const int tooltip_frame_light = 2131165306;
+			// aapt resource value: 0x7F07007D
+			public const int tooltip_frame_light = 2131165309;
 			
 			// aapt resource value: 0x7F070009
 			public const int User = 2131165193;
