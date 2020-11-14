@@ -1,0 +1,12 @@
+D:\Programming\Project\OurRegion\FunctionTemplates\obj\Debug\FunctionTemplates.csprojAssemblyReference.cache
+D:\Programming\Project\OurRegion\FunctionTemplates\obj\Debug\FunctionTemplates.csproj.CoreCompileInputs.cache
+D:\Programming\Project\OurRegion\FunctionTemplates\bin\Debug\FunctionTemplates.exe.config
+D:\Programming\Project\OurRegion\FunctionTemplates\bin\Debug\FunctionTemplates.exe
+D:\Programming\Project\OurRegion\FunctionTemplates\bin\Debug\FunctionTemplates.pdb
+D:\Programming\Project\OurRegion\FunctionTemplates\bin\Debug\Nancy.dll
+D:\Programming\Project\OurRegion\FunctionTemplates\bin\Debug\Newtonsoft.Json.dll
+D:\Programming\Project\OurRegion\FunctionTemplates\bin\Debug\Nancy.xml
+D:\Programming\Project\OurRegion\FunctionTemplates\bin\Debug\Newtonsoft.Json.xml
+D:\Programming\Project\OurRegion\FunctionTemplates\obj\Debug\FunctionTemplates.csproj.CopyComplete
+D:\Programming\Project\OurRegion\FunctionTemplates\obj\Debug\FunctionTemplates.exe
+D:\Programming\Project\OurRegion\FunctionTemplates\obj\Debug\FunctionTemplates.pdb
