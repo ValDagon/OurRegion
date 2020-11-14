@@ -16,7 +16,7 @@
             <Grid ColumnDefinitions="Auto, *, Auto">
                 <ImageButton Source="menu.png" BackgroundColor="Transparent" VerticalOptions="Center" 
                              HeightRequest="24" WidthRequest="24" Clicked="MenuTapped"/>
-                <Image Grid.Column="1"  Source="Document.png"
+                    <Label Grid.Column="1"  Text="Информация МФЦ" FontSize="22" FontFamily="PlayfairDisplay" TextColor="Black"
                        VerticalOptions="Center" HorizontalOptions="Center"/>
                 <Image Grid.Column="2" Source="More.png" VerticalOptions="Center" HeightRequest="24" WidthRequest="24"/>
             </Grid>
@@ -95,10 +95,10 @@
                         <StackLayout.GestureRecognizers>
                             <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
                         </StackLayout.GestureRecognizers>
-                        <Button WidthRequest="140" HeightRequest="50" Text="Главная" TextColor="Black" FontSize="20" VerticalOptions="Center" 
-                                        FontFamily="PlayfairDisplay" Background="#E44E34" CornerRadius="14"/>
-                        <!--<Label Text="Главная" TextColor="White" FontSize="20" VerticalOptions="Center" 
-                                        FontFamily="PlayfairDisplay"/>-->
+                        <!--<Button WidthRequest="140" HeightRequest="50" Text="Главная" TextColor="Black" FontSize="20" VerticalOptions="Center" 
+                                        FontFamily="PlayfairDisplay" Background="#E44E34" CornerRadius="14"/>-->
+                        <Label Text="Главная" TextColor="Black" FontSize="16" VerticalOptions="Center" 
+                                        FontFamily="PlayfairDisplay"/>
                     </StackLayout>
 
                     <StackLayout Orientation="Horizontal" Spacing="20">
@@ -114,8 +114,9 @@
                         <StackLayout.GestureRecognizers>
                             <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_2"/>
                         </StackLayout.GestureRecognizers>
-
-                        <Label Text="Информация МФЦ" TextColor="Black" FontSize="16" VerticalOptions="Center"
+                        <!--<Button WidthRequest="140" HeightRequest="50" Text="Информация МФЦ" TextColor="Black" FontSize="16" VerticalOptions="Center" 
+                                        FontFamily="PlayfairDisplay" Background="#E44E34" CornerRadius="14"/>-->
+                        <Label Text="Информация МФЦ" TextColor="Black" FontSize="20" VerticalOptions="Center"
                                         FontFamily="PlayfairDisplay"/>
                     </StackLayout>
                     <Grid RowDefinitions="2, *" HorizontalOptions="Start" VerticalOptions="Start" Margin="0,50">
