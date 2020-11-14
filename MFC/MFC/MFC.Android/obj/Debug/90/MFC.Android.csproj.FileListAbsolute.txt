@@ -543,3 +543,9 @@ C:\Users\HP\Desktop\MFC\OurRegion\MFC\MFC\MFC.Android\obj\Debug\90\res\drawable-
 C:\Users\HP\Desktop\MFC\OurRegion\MFC\MFC\MFC.Android\obj\Debug\90\res\drawable-xxxhdpi\oflargesize.png
 C:\Users\HP\Desktop\MFC\OurRegion\MFC\MFC\MFC.Android\obj\Debug\90\res\drawable-xxxhdpi\points.png
 C:\Users\HP\Desktop\MFC\OurRegion\MFC\MFC\MFC.Android\obj\Debug\90\res\drawable-xxxhdpi\tick.png
+C:\Users\HP\Desktop\MFC\OurRegion\MFC\MFC\MFC.Android\obj\Debug\90\res\drawable-hdpi\icon0person.png
+C:\Users\HP\Desktop\MFC\OurRegion\MFC\MFC\MFC.Android\obj\Debug\90\res\drawable-ldpi\icon0person.png
+C:\Users\HP\Desktop\MFC\OurRegion\MFC\MFC\MFC.Android\obj\Debug\90\res\drawable-mdpi\icon0person.png
+C:\Users\HP\Desktop\MFC\OurRegion\MFC\MFC\MFC.Android\obj\Debug\90\res\drawable-xhdpi\icon0person.png
+C:\Users\HP\Desktop\MFC\OurRegion\MFC\MFC\MFC.Android\obj\Debug\90\res\drawable-xxhdpi\icon0person.png
+C:\Users\HP\Desktop\MFC\OurRegion\MFC\MFC\MFC.Android\obj\Debug\90\res\drawable-xxxhdpi\icon0person.png

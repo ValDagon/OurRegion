@@ -44,9 +44,9 @@ namespace MFC.ViewModel
             return new ObservableCollection<Menu>
             {
                 new Menu { Name = "Оплата госпошлин -30%", Name1 = "1 200 Р", Name2 ="850 Р"},
-                new Menu { Name = "Оплата госпошлин -30%", Name1 = "1 200 Р", Name2 ="850 Р"},
-                new Menu { Name = "Оплата госпошлин -30%g", Name1 = "1 200 Р", Name2 ="850 Р"},
-                new Menu { Name = "Оплата госпошлин -30%", Name1 = "1 200 Р", Name2 ="850 Р"}
+                new Menu { Name = "Авто штрафы -50%", Name1 = "900 Р", Name2 ="450 Р"},
+                new Menu { Name = "Оплата госпошлин -30%", Name1 = "900 Р", Name2 ="850 Р"},
+                new Menu { Name = "Оплата госпошлин -30%", Name1 = "450 Р", Name2 ="850 Р"}
             };
         }
 
@@ -70,9 +70,9 @@ namespace MFC.ViewModel
             return new ObservableCollection<Product>
             {
                 new Product { Name = "Запись на услугу принята",  Image = "Tick.png", Model = "Получение загранпаспорта", Description = "16.11.20", Description1 = "09:00"},
-                new Product { Name = "Запись на услугу принята",  Image = "Points.png", Model = "Получение загранпаспорта", Description = "16.11.20", Description1 = "09:00"},
-                new Product { Name = "Запись на услугу принята",  Image = "Tick.png", Model = "Получение загранпаспорта", Description = "16.11.20", Description1 = "09:00"},
-                new Product { Name = "Запись на услугу принята",  Image = "Tick.png", Model = "Получение загранпаспорта", Description = "16.11.20", Description1 = "09:00"}
+                new Product { Name = "Запись на не услугу принята",  Image = "Points.png", Model = "Замена паспорта РФ в...", Description = "13.11.20", Description1 = "10:00"},
+                new Product { Name = "Запись на услугу принята",  Image = "Tick.png", Model = "Прием в налоговую...", Description = "12.11.20", Description1 = "12:00"},
+                new Product { Name = "Запись на услугу принята",  Image = "Tick.png", Model = "Получение загранпаспорта", Description = "11.11.20", Description1 = "08:00"}
                 };
         }
 
