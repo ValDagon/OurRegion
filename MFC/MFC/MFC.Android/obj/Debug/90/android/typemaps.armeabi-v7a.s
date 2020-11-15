@@ -17856,9 +17856,9 @@ map_java_to_managed:
 	.long	.L.java_type_name.1706
 	.long	0
 	.long	.L.java_type_name.1707
-	.long	0
+	.long	.L.managed_type_name.1777
 	.long	.L.java_type_name.1708
-	.long	0
+	.long	.L.managed_type_name.1775
 	.long	.L.java_type_name.1709
 	.long	.L.managed_type_name.1774
 	.long	.L.java_type_name.1710
@@ -22404,7 +22404,7 @@ map_java_to_managed:
 	.long	.L.java_type_name.3980
 	.long	0
 	.long	.L.java_type_name.3981
-	.long	0
+	.long	.L.managed_type_name.4193
 	.long	.L.java_type_name.3982
 	.long	.L.managed_type_name.4195
 	.long	.L.java_type_name.3983
@@ -23198,7 +23198,7 @@ map_java_to_managed:
 	.long	.L.java_type_name.4377
 	.long	.L.managed_type_name.4645
 	.long	.L.java_type_name.4378
-	.long	.L.managed_type_name.4647
+	.long	0
 	.long	.L.java_type_name.4379
 	.long	.L.managed_type_name.4638
 	.long	.L.java_type_name.4380
@@ -23220,7 +23220,7 @@ map_java_to_managed:
 	.long	.L.java_type_name.4388
 	.long	.L.managed_type_name.4652
 	.long	.L.java_type_name.4389
-	.long	0
+	.long	.L.managed_type_name.4654
 	.long	.L.java_type_name.4390
 	.long	0
 	.long	.L.java_type_name.4391
@@ -23232,9 +23232,9 @@ map_java_to_managed:
 	.long	.L.java_type_name.4394
 	.long	0
 	.long	.L.java_type_name.4395
-	.long	0
+	.long	.L.managed_type_name.4660
 	.long	.L.java_type_name.4396
-	.long	0
+	.long	.L.managed_type_name.4661
 	.long	.L.java_type_name.4397
 	.long	.L.managed_type_name.4662
 	.long	.L.java_type_name.4398
@@ -25988,7 +25988,7 @@ map_java_to_managed:
 	.long	.L.java_type_name.5772
 	.long	.L.managed_type_name.2426
 	.long	.L.java_type_name.5773
-	.long	.L.managed_type_name.2427
+	.long	0
 	.long	.L.java_type_name.5774
 	.long	.L.managed_type_name.2428
 	.long	.L.java_type_name.5775
@@ -26012,7 +26012,7 @@ map_java_to_managed:
 	.long	.L.java_type_name.5784
 	.long	.L.managed_type_name.2421
 	.long	.L.java_type_name.5785
-	.long	.L.managed_type_name.2422
+	.long	0
 	.long	.L.java_type_name.5786
 	.long	.L.managed_type_name.5846
 	.long	.L.java_type_name.5787
@@ -26074,9 +26074,9 @@ map_java_to_managed:
 	.long	.L.java_type_name.5815
 	.long	.L.managed_type_name.2425
 	.long	.L.java_type_name.5816
-	.long	.L.managed_type_name.2424
+	.long	0
 	.long	.L.java_type_name.5817
-	.long	.L.managed_type_name.2431
+	.long	0
 	.long	.L.java_type_name.5818
 	.long	.L.managed_type_name.2433
 	.long	.L.java_type_name.5819

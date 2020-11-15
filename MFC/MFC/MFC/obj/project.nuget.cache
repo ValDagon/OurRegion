@@ -1,15 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "gFlktAlkCUDGZoSgUT/jo/YapBdmghUu1Ui1RTKcKQJLS2p8tYERK3YGlF0a1gA8EChh2hOpIaLFhkth/dtvyA==",
+  "dgSpecHash": "/fvO5APDaNxsBjlq8UHBwxnXfO5xL7BOZc7DMSVuLmzP45J4z1ZWqzbddd/QMYgJz79bpDdwJADuwfJKYuV8jA==",
   "success": true,
-  "projectFilePath": "D:\\Programming\\Project\\OurRegion\\MFC\\MFC\\MFC\\MFC.csproj",
+  "projectFilePath": "C:\\Users\\HP\\Desktop\\MFC\\OurRegion\\MFC\\MFC\\MFC\\MFC.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Valentin\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Users\\Valentin\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
-    "C:\\Users\\Valentin\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
-    "C:\\Users\\Valentin\\.nuget\\packages\\xamarin.essentials\\1.5.3.2\\xamarin.essentials.1.5.3.2.nupkg.sha512",
-    "C:\\Users\\Valentin\\.nuget\\packages\\xamarin.forms\\4.8.0.1687\\xamarin.forms.4.8.0.1687.nupkg.sha512",
-    "C:\\Users\\Valentin\\.nuget\\packages\\xamarin.plugin.sharedtransitions\\2.4.0\\xamarin.plugin.sharedtransitions.2.4.0.nupkg.sha512"
+    "C:\\Users\\HP\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\HP\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\HP\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\HP\\.nuget\\packages\\xamarin.essentials\\1.5.3.2\\xamarin.essentials.1.5.3.2.nupkg.sha512",
+    "C:\\Users\\HP\\.nuget\\packages\\xamarin.forms\\4.8.0.1687\\xamarin.forms.4.8.0.1687.nupkg.sha512",
+    "C:\\Users\\HP\\.nuget\\packages\\xamarin.plugin.sharedtransitions\\2.4.0\\xamarin.plugin.sharedtransitions.2.4.0.nupkg.sha512"
   ],
   "logs": []
 }
