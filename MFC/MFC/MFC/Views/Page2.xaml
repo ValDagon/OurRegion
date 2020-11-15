@@ -27,11 +27,19 @@
                         <Image Source="icon2001.png" Grid.Row="0" Grid.Column="0"/>
                         <Label Text="Оплата по QR-коду" FontFamily="Lora" Grid.Row="0" Grid.Column="1" HorizontalOptions="Start" VerticalOptions="Center"/>
                         <Image Source="icon2002.png" Grid.Row="1" Grid.Column="0"/>
-                        <Label Text="Оплата УИН" FontFamily="Lora" Grid.Row="1" Grid.Column="1" HorizontalOptions="Start" VerticalOptions="Center"/>
+                        <Label Text="Оплата УИН" FontFamily="Lora" Grid.Row="1" Grid.Column="1" HorizontalOptions="Start" VerticalOptions="Center">
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_5"/>
+                            </Label.GestureRecognizers>
+                        </Label>
                         <Image Source="icon2003.png" Grid.Row="2" Grid.Column="0"/>
                         <Label Text="Автоплатежи" FontFamily="Lora" Grid.Row="2" Grid.Column="1" HorizontalOptions="Start" VerticalOptions="Center"/>
                         <Image Source="icon2004.png" Grid.Row="3" Grid.Column="0"/>
-                        <Label Text="Платеж по реквизитам" FontFamily="Lora" Grid.Row="3" Grid.Column="1" HorizontalOptions="Start" VerticalOptions="Center"/>
+                        <Label Text="Платеж по реквизитам" FontFamily="Lora" Grid.Row="3" Grid.Column="1" HorizontalOptions="Start" VerticalOptions="Center">
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_6"/>
+                            </Label.GestureRecognizers>
+                        </Label>
                         <Image Source="icon2005.png" Grid.Row="4" Grid.Column="0"/>
                         <Label Text="История платежей" FontFamily="Lora" Grid.Row="4" Grid.Column="1" HorizontalOptions="Start" VerticalOptions="Center"/>
 

@@ -19,7 +19,6 @@
                        VerticalOptions="Center" HorizontalOptions="Center"/>
                 <Image Grid.Column="2" Source="More.png" VerticalOptions="Center" HeightRequest="24" WidthRequest="24"/>
             </Grid>
-
             <CollectionView Grid.Row="1" HeightRequest="135" WidthRequest="135"  ItemsSource="{Binding MenuList}">
 
                 <CollectionView.ItemsLayout >
@@ -44,7 +43,6 @@
                     </DataTemplate>
                 </CollectionView.ItemTemplate>
             </CollectionView>
-
 
             <Grid Grid.Row="2" ColumnDefinitions="*, Auto" ColumnSpacing="15">
                 <Label Text="Уведомления" TextColor="#2D2942" FontSize="20" FontAttributes="Bold" VerticalOptions="Center" FontFamily="Lora" />

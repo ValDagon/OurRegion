@@ -38,3 +38,5 @@ D:\Programming\Project\OurRegion\MFC\MFC\MFC\obj\Debug\netstandard2.0\MFC.pdb
 C:\Users\HP\Desktop\MFC\OurRegion\MFC\MFC\MFC\obj\Debug\netstandard2.0\MFC.csprojAssemblyReference.cache
 C:\Users\HP\Desktop\MFC\OurRegion\MFC\MFC\MFC\obj\Debug\netstandard2.0\Views\Page4.xaml.g.cs
 C:\Users\HP\Desktop\MFC\OurRegion\MFC\MFC\MFC\obj\Debug\netstandard2.0\Views\Page5.xaml.g.cs
+C:\Users\HP\Desktop\MFC\OurRegion\MFC\MFC\MFC\obj\Debug\netstandard2.0\Views\Page6.xaml.g.cs
+C:\Users\HP\Desktop\MFC\OurRegion\MFC\MFC\MFC\obj\Debug\netstandard2.0\Views\Page7.xaml.g.cs

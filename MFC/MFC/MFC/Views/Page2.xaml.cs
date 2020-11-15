@@ -74,5 +74,17 @@ namespace MFC.Views
             CloseMenu();
             Application.Current.MainPage = new NavigationPage(new Page4());
         }
+
+        private void TapGestureRecognizer_Tapped_5(object sender, EventArgs e)
+        {
+            CloseMenu();
+            Application.Current.MainPage = new NavigationPage(new Page6());
+        }
+
+        private void TapGestureRecognizer_Tapped_6(object sender, EventArgs e)
+        {
+            CloseMenu();
+            Application.Current.MainPage = new NavigationPage(new Page7());
+        }
     }
 }
