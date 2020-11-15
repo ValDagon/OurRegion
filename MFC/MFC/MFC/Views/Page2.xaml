@@ -22,58 +22,48 @@
                 </Grid>
                 
                 <StackLayout Grid.Row="1">
-                    <Label Text="Оплата" Grid.Row="0" TextColor="#2D2942" FontSize="18" FontAttributes="Bold" VerticalOptions="Start" FontFamily="PlayfairDisplay" />
-                    <!--<Label BackgroundColor="#bababa" Grid.Row="0" HorizontalOptions="FillAndExpand" VerticalOptions="Center" HeightRequest="1" />-->
-                    <StackLayout Orientation="Horizontal"  VerticalOptions="Start">
-                        <Image Source="icon2001.png"/>
-                        <Label HorizontalOptions="Start"  Text="Оплата по QR-коду" FontSize="14" FontFamily="Lora" />
-                    </StackLayout>
-                    <StackLayout Orientation="Horizontal"  VerticalOptions="Start">
-                        <Image Source="icon2002.png"/>
-                        <Label HorizontalOptions="Start"  Text="Оплата УИН" FontSize="14" FontFamily="Lora" />
-                    </StackLayout>
-                    <StackLayout Orientation="Horizontal"  VerticalOptions="Start">
-                        <Image Source="icon2003.png"/>
-                        <Label HorizontalOptions="Start"  Text="Автоплатежи" FontSize="14" FontFamily="Lora" />
-                    </StackLayout>
-                    <StackLayout Orientation="Horizontal"  VerticalOptions="Start">
-                        <Image Source="icon2004.png"/>
-                        <Label HorizontalOptions="Start"  Text="Платеж по реквизитам" FontSize="14" FontFamily="Lora" />
-                    </StackLayout>
-                    <StackLayout Orientation="Horizontal"  VerticalOptions="Start">
-                        <Image Source="icon2005.png"/>
-                        <Label HorizontalOptions="Start"  Text="История платежей" FontSize="14" FontFamily="Lora" />
-                    </StackLayout>
-                    <Label Text="Платежи" Grid.Row="0" TextColor="#2D2942" FontSize="18" FontAttributes="Bold" VerticalOptions="Start" FontFamily="PlayfairDisplay" />
-                    <Grid RowDefinitions="40,40,40,40,40" ColumnDefinitions="40,*,40">
+                    <Label Text="Оплата" Grid.Row="0" TextColor="#2D2942" FontSize="18" FontAttributes="Bold" VerticalOptions="Start" FontFamily="PlayfairDisplay" Margin="10" />
+                    <Grid RowDefinitions="40,40,40,40,40" ColumnDefinitions="20,*">
+                        <Image Source="icon2001.png" Grid.Row="0" Grid.Column="0"/>
+                        <Label Text="Оплата по QR-коду" FontFamily="Lora" Grid.Row="0" Grid.Column="1" HorizontalOptions="Start" VerticalOptions="Center"/>
+                        <Image Source="icon2002.png" Grid.Row="1" Grid.Column="0"/>
+                        <Label Text="Оплата УИН" FontFamily="Lora" Grid.Row="1" Grid.Column="1" HorizontalOptions="Start" VerticalOptions="Center"/>
+                        <Image Source="icon2003.png" Grid.Row="2" Grid.Column="0"/>
+                        <Label Text="Автоплатежи" FontFamily="Lora" Grid.Row="2" Grid.Column="1" HorizontalOptions="Start" VerticalOptions="Center"/>
+                        <Image Source="icon2004.png" Grid.Row="3" Grid.Column="0"/>
+                        <Label Text="Платеж по реквизитам" FontFamily="Lora" Grid.Row="3" Grid.Column="1" HorizontalOptions="Start" VerticalOptions="Center"/>
+                        <Image Source="icon2005.png" Grid.Row="4" Grid.Column="0"/>
+                        <Label Text="История платежей" FontFamily="Lora" Grid.Row="4" Grid.Column="1" HorizontalOptions="Start" VerticalOptions="Center"/>
+
+                    </Grid>
+                    <Label Text="Платежи" Grid.Row="0" TextColor="#2D2942" FontSize="18" FontAttributes="Bold" VerticalOptions="Start" FontFamily="PlayfairDisplay" Margin="10" />
+                    <Grid RowDefinitions="40,40,40,40,40" ColumnDefinitions="20,*,10">
                         <Image Source="icon2006.png" Grid.Row="0" Grid.Column="0"/>
-                        <Label Text="История платежей" Grid.Row="0" Grid.Column="1" HorizontalOptions="Start" VerticalOptions="Center"/>
+                        <Label Text="История платежей" FontFamily="Lora" Grid.Row="0" Grid.Column="1" HorizontalOptions="Start" VerticalOptions="Center"/>
                         <Image Source="icon2011.png" Grid.Row="0" Grid.Column="2"/>
                         <Label BackgroundColor="#bababa" Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2" HorizontalOptions="FillAndExpand" VerticalOptions="End" HeightRequest="2"  />
 
                         <Image Source="icon2007.png" Grid.Row="1" Grid.Column="0"/>
-                        <Label Text="Госпошлины" Grid.Row="1" Grid.Column="1" HorizontalOptions="Start" VerticalOptions="Center"/>
+                        <Label Text="Госпошлины" FontFamily="Lora" Grid.Row="1" Grid.Column="1" HorizontalOptions="Start" VerticalOptions="Center"/>
                         <Image Source="icon2011.png" Grid.Row="1" Grid.Column="2"/>
                         <Label BackgroundColor="#bababa" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" HorizontalOptions="FillAndExpand" VerticalOptions="End" HeightRequest="2"  />
 
                         <Image Source="icon2008.png" Grid.Row="2" Grid.Column="0"/>
-                        <Label Text="Штрафы ГИБДД" Grid.Row="2" Grid.Column="1" HorizontalOptions="Start" VerticalOptions="Center"/>
+                        <Label Text="Штрафы ГИБДД" FontFamily="Lora" Grid.Row="2" Grid.Column="1" HorizontalOptions="Start" VerticalOptions="Center"/>
                         <Image Source="icon2011.png" Grid.Row="2" Grid.Column="2"/>
                         <Label BackgroundColor="#bababa" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2" HorizontalOptions="FillAndExpand" VerticalOptions="End" HeightRequest="2"  />
 
                         <Image Source="icon2009.png" Grid.Row="3" Grid.Column="0"/>
-                        <Label Text="Судебная задолженность" Grid.Row="3" Grid.Column="1" HorizontalOptions="Start" VerticalOptions="Center"/>
+                        <Label Text="Судебная задолженность" FontFamily="Lora" Grid.Row="3" Grid.Column="1" HorizontalOptions="Start" VerticalOptions="Center"/>
                         <Image Source="icon2011.png" Grid.Row="3" Grid.Column="2"/>
                         <Label BackgroundColor="#bababa" Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2" HorizontalOptions="FillAndExpand" VerticalOptions="End" HeightRequest="2"  />
 
                         <Image Source="icon2010.png" Grid.Row="4" Grid.Column="0"/>
-                        <Label Text="ФСИН переводы" Grid.Row="4" Grid.Column="1" HorizontalOptions="Start" VerticalOptions="Center"/>
+                        <Label Text="ФСИН переводы" FontFamily="Lora" Grid.Row="4" Grid.Column="1" HorizontalOptions="Start" VerticalOptions="Center"/>
                         <Image Source="icon2011.png" Grid.Row="4" Grid.Column="2"/>
                         <Label BackgroundColor="#bababa" Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2" HorizontalOptions="FillAndExpand" VerticalOptions="End" HeightRequest="2"  />
                     </Grid>
-                    <Label Text="Геолокация" Grid.Row="0" TextColor="#2D2942" FontSize="20" FontAttributes="Bold" VerticalOptions="Start" FontFamily="Lora" />
-                    <Label BackgroundColor="#bababa" Grid.Row="0" HorizontalOptions="FillAndExpand" VerticalOptions="Center" HeightRequest="1" />
-                    
+
                 </StackLayout>
 
 
