@@ -3,7 +3,6 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             xmlns:st="clr-namespace:Plugin.SharedTransitions;assembly=Plugin.SharedTransitions"
              xmlns:vm="clr-namespace:MFC.ViewModel"
              mc:Ignorable="d"           
              x:Class="MFC.Views.MainPagee">
@@ -65,8 +64,7 @@
                     <DataTemplate>
                         <Grid RowDefinitions="*, Auto" ColumnDefinitions="50,*,Auto" BackgroundColor="White" Padding="0,0,0,10" >
                             <Image Source="{Binding Image}" WidthRequest="20"  Aspect="AspectFill" HorizontalOptions="Center" Grid.Row="0" Grid.RowSpan="2" VerticalOptions="Center"
-                                       st:Transition.Name="WatchImage"
-                                       st:Transition.Group="{Binding Name}"/>
+                                       />
                             
                             <Label Text="{Binding Name}" TextColor="#2D2942" FontSize="14" VerticalOptions="Start" HorizontalOptions="Start" Grid.Row="0" Grid.Column="1" Margin="0,10,0,0" FontFamily="Lora"/>
                             <Label Text="{Binding Model}" TextColor="#2D2942" FontSize="14" Opacity="0.5" VerticalOptions="Start" HorizontalOptions="Start" Grid.Row="1" Grid.Column="1" Margin="0,0,10,0" FontFamily="Lora"/>
@@ -136,7 +134,7 @@
                         <!--<Label Text="Информация МФЦ" TextColor="Black" FontSize="16" VerticalOptions="Center" Grid.Row="5" FontFamily="PlayfairDisplay" Grid.Column="2"/>-->
                         <StackLayout Orientation="Horizontal" Grid.Row="7" Grid.Column="2">
                             <StackLayout.GestureRecognizers>
-                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_3"/>
                             </StackLayout.GestureRecognizers>
                             <Label Text="Платежи" TextColor="Black" FontSize="16" VerticalOptions="Center" FontFamily="PlayfairDisplay"/>
                         </StackLayout>

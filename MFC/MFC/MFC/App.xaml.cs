@@ -14,8 +14,8 @@ namespace MFC
             InitializeComponent();
             Device.SetFlags(new string[] { "Shapes_Experimental", "Expander_Experimental" });
             // MainPage = new SharedTransitionNavigationPage(new TravelIndustry());
-            MainPage = new SharedTransitionNavigationPage(new MainPagee());
-            //MainPage = new MainPage();
+            //MainPage = new SharedTransitionNavigationPage(new MainPagee());
+            MainPage = new MainPagee();
         }
 
         protected override void OnStart()

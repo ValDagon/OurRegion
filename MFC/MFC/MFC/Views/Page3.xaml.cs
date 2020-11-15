@@ -55,19 +55,25 @@ namespace MFC.Views
         private void TapGestureRecognizer_Tapped(object sender, EventArgs e)
         {
             CloseMenu();
-            Application.Current.MainPage = new NavigationPage(new Page1());
+            Application.Current.MainPage = new NavigationPage(new MainPagee());
         }
 
         private void TapGestureRecognizer_Tapped_1(object sender, EventArgs e)
         {
             CloseMenu();
-            Application.Current.MainPage = new NavigationPage(new Page2());
+            Application.Current.MainPage = new NavigationPage(new Page1());
         }
 
         private void TapGestureRecognizer_Tapped_2(object sender, EventArgs e)
         {
             CloseMenu();
             Application.Current.MainPage = new NavigationPage(new Page3());
+        }
+
+        private void TapGestureRecognizer_Tapped_3(object sender, EventArgs e)
+        {
+            CloseMenu();
+            Application.Current.MainPage = new NavigationPage(new Page2());
         }
     }
 }
