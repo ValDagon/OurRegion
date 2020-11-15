@@ -5,32 +5,60 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:vm="clr-namespace:MFC.ViewModel"
              mc:Ignorable="d"
-             x:Class="MFC.Views.Page1">
+             x:Class="MFC.Views.Page4">
     <ContentPage.BindingContext>
         <vm:MainViewModel x:Name="vm"/>
     </ContentPage.BindingContext>
-
     <Grid>
         <ScrollView>
-            <Grid RowDefinitions="Auto,   *" RowSpacing="30" Padding="30">
+            <Grid RowDefinitions="Auto, 30,  *" RowSpacing="30" Padding="30">
                 <Grid ColumnDefinitions="Auto, *, Auto">
                     <ImageButton Source="menu.png" BackgroundColor="Transparent" VerticalOptions="Center" 
                              HeightRequest="24" WidthRequest="24" Clicked="MenuTapped"/>
-                    <Label Grid.Column="1"  Text="Статусы заявлений" FontSize="22" FontFamily="PlayfairDisplay" TextColor="Black"
+                    <Label Grid.Column="1"  Text="Оренбургская обл." FontSize="22" FontFamily="PlayfairDisplay" TextColor="Black"
                        VerticalOptions="Center" HorizontalOptions="Center"/>
                     <Image Grid.Column="2" Source="More.png" VerticalOptions="Center" HeightRequest="24" WidthRequest="24"/>
                 </Grid>
-                <Grid Grid.Row="1" RowDefinitions="30,1,*" ColumnDefinitions="20,*,20">
-                    
-                    <Label Text="Текущие" TextColor="#E44E34" FontSize="16" VerticalOptions="Center" FontFamily="PlayfairDisplay" HorizontalOptions="Start"  Grid.Row="0" Grid.Column="1"/>
-                    <Label Text="Прошедшие" TextColor="#E44E34" FontSize="16" VerticalOptions="Center" FontFamily="PlayfairDisplay" HorizontalOptions="End"  Grid.Row="0" Grid.Column="1"/>
-                    <Label BackgroundColor="Gray" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" HeightRequest="2" Grid.Row="1" Grid.Column="1" />
+                <SearchBar PlaceholderColor="Black" CancelButtonColor="#FF6000"  Grid.Row="1" >
 
-                    <Image Source="icon4001.png" VerticalOptions="Center" HorizontalOptions="Center" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Margin="0,0,0,150"/>
-                    <Label Text="Нет текущих заявлений" TextColor="Gray" FontSize="16" VerticalOptions="Center" FontFamily="PlayfairDisplay" HorizontalOptions="Center" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2"/>
+                </SearchBar>
+                <Grid RowDefinitions="70,20,70,20,70,20,70,20,90,20,70,20,70" ColumnDefinitions="10,*,10" Grid.Row="2">
                     
+
+                    <Label Text="МАУ ОРЕНБУРГСКАЯ ОБЛАСТИ 'МФЦ' Г. НОВОТРОИЦКА" TextColor="Black" FontSize="16" VerticalOptions="Start" FontFamily="PlayfairDisplay" Grid.Row="0" Grid.Column="1"/>
+                    <Label Text="г.Новотроицк,ул.Советская,д.154" TextColor="Black" FontSize="14" VerticalOptions="End" FontFamily="PlayfairDisplay" Grid.Row="0" Grid.Column="1"/>
+                    <Label BackgroundColor="#bababa"  HorizontalOptions="FillAndExpand" VerticalOptions="End" HeightRequest="1" Grid.Row="0" Grid.Column="1"/>
+
+                    <Label Text="ОТДЕЛЕНИЕ МАУ ОРЕНБУРГСКОЙ ОБЛАСТИ 'МФЦ' Г. ОРСКА" TextColor="Black" FontSize="16" VerticalOptions="Start" FontFamily="PlayfairDisplay" Grid.Row="2" Grid.Column="1"/>
+                    <Label Text="г. Орск,пер.Клубный,д.7А" TextColor="Black" FontSize="14" VerticalOptions="End" FontFamily="PlayfairDisplay" Grid.Row="2" Grid.Column="1"/>
+                    <Label BackgroundColor="#bababa"  HorizontalOptions="FillAndExpand" VerticalOptions="End" HeightRequest="1" Grid.Row="2" Grid.Column="1"/>
+
+                    <Label Text="ОТДЕЛЕНИЕ МАУ ОРЕНБУРГСКОЙ ОБЛАСТИ 'МФЦ' Г. ОРСКА" TextColor="Black" FontSize="16" VerticalOptions="Start" FontFamily="PlayfairDisplay" Grid.Row="4" Grid.Column="1"/>
+                    <Label Text="г. Орск,ул.Макаренко,д.20а" TextColor="Black" FontSize="14" VerticalOptions="End" FontFamily="PlayfairDisplay" Grid.Row="4" Grid.Column="1"/>
+                    <Label BackgroundColor="#bababa"  HorizontalOptions="FillAndExpand" VerticalOptions="End" HeightRequest="1" Grid.Row="4" Grid.Column="1"/>
+
+                    <Label Text="МАУ ОРЕНБУРГСКАЯ ОБЛАСТИ 'МФЦ' ГАЙСКОГО ГОРОДСКОГО ОКРУГА" TextColor="Black" FontSize="16" VerticalOptions="Start" FontFamily="PlayfairDisplay" Grid.Row="6" Grid.Column="1"/>
+                    <Label Text="г. Гай,ул.Ленина,д.23" TextColor="Black" FontSize="14" VerticalOptions="End" FontFamily="PlayfairDisplay" Grid.Row="6" Grid.Column="1"/>
+                    <Label BackgroundColor="#bababa"  HorizontalOptions="FillAndExpand" VerticalOptions="End" HeightRequest="1" Grid.Row="6" Grid.Column="1"/>
+
+                    <Label Text="МАУ ОРЕНБУРГСКАЯ ОБЛАСТИ ОКТЯБРЬСКОГО РАЙОНА В С.ОКТЯБРЬСКОЕ" TextColor="Black" FontSize="16" VerticalOptions="Start" FontFamily="PlayfairDisplay" Grid.Row="8" Grid.Column="1"/>
+                    <Label Text="с. Октябртьское,ул.Луначарского,д.57" TextColor="Black" FontSize="14" VerticalOptions="End" FontFamily="PlayfairDisplay" Grid.Row="8" Grid.Column="1"/>
+                    <Label BackgroundColor="#bababa"  HorizontalOptions="FillAndExpand" VerticalOptions="End" HeightRequest="1" Grid.Row="8" Grid.Column="1"/>
+
+                    <Label Text="ГАУ ОРЕНБУРГСКОЙ ОБЛАСТИ 'МФЦ' Г. ОРЕНБУРГА" TextColor="Black" FontSize="16" VerticalOptions="Start" FontFamily="PlayfairDisplay" Grid.Row="10" Grid.Column="1"/>
+                    <Label Text="г. Оренбург, ш.Шарлынское,1/2" TextColor="Black" FontSize="14" VerticalOptions="End" FontFamily="PlayfairDisplay" Grid.Row="10" Grid.Column="1"/>
+                    <Label BackgroundColor="#bababa"  HorizontalOptions="FillAndExpand" VerticalOptions="End" HeightRequest="1" Grid.Row="10" Grid.Column="1"/>
                 </Grid>
-                
+                <!--<Grid Grid.Row="1" RowDefinitions="30,*" ColumnDefinitions="20,*,20">
+                    <SearchBar PlaceholderColor="Black" CancelButtonColor="#FF6000" Grid.Column="1" Grid.Row="1"/>
+                    <StackLayout Grid.Row="1" Grid.Column="1" >
+                    <Label Text="МАУ ОРЕНБУРГСКАЯ ОБЛАСТИ 'МФЦ' Г. НОВОТРОИЦКА" TextColor="Black" FontSize="16" VerticalOptions="Center" FontFamily="PlayfairDisplay"/>
+                    <Label Text="г. Новотроицк, ул. Советская, д. 154" TextColor="Black" FontSize="14" VerticalOptions="Center" FontFamily="PlayfairDisplay"/>
+                    <Label BackgroundColor="#bababa"  HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" HeightRequest="1"/>
+                    </StackLayout>
+
+                </Grid>-->
+
 
             </Grid>
         </ScrollView>
@@ -40,12 +68,13 @@
                     <TapGestureRecognizer Tapped="OverlayTapped"/>
                 </BoxView.GestureRecognizers>
             </BoxView>
-            <Grid x:Name="MenuView" WidthRequest="260" BackgroundColor="#FFFFFF" 
+            <Grid x:Name="MenuView" WidthRequest="300" BackgroundColor="#FFFFFF" 
                   HorizontalOptions="Start" TranslationX="-260">
                 <Grid.Clip>
                     <PathGeometry Figures="M0,0V511.043H140.714l86.992-116.012V0Z"/>
                 </Grid.Clip>
                 <Grid ColumnDefinitions="10,40,130" RowDefinitions="20,20,20,1,*" HorizontalOptions="Start" VerticalOptions="Start" Margin="0,20">
+                    
                     <Image Source="Icon0person.png"  Grid.Column="1"  Grid.RowSpan="3"  Margin="0,0,5,0"/>
                     <Label Text="Блинов Кирилл" Grid.Column="2" Grid.Row="0" FontSize="14" VerticalOptions="Center" TextColor="Gray"
                                         FontFamily="Lora"/>
@@ -66,9 +95,8 @@
                             <StackLayout.GestureRecognizers>
                                 <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_1"/>
                             </StackLayout.GestureRecognizers>
-                            <Label Text="Статус заявления" TextColor="#E44E34" FontSize="16" VerticalOptions="Center" FontFamily="PlayfairDisplay"/>
+                            <Label Text="Статус заявления" TextColor="Black" FontSize="16" VerticalOptions="Center" FontFamily="PlayfairDisplay"/>
                         </StackLayout>
-                        <Label BackgroundColor="#E44E34" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" HeightRequest="2" Grid.Row="3" Grid.Column="0" />
                         <!--<Label Text="Статус заявления" TextColor="Black" FontSize="16" VerticalOptions="Center" Grid.Row="3" FontFamily="PlayfairDisplay" Grid.Column="2"/>-->
                         <StackLayout Orientation="Horizontal" Grid.Row="5" Grid.Column="2">
                             <StackLayout.GestureRecognizers>
@@ -87,8 +115,9 @@
                             <StackLayout.GestureRecognizers>
                                 <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_4"/>
                             </StackLayout.GestureRecognizers>
-                            <Label Text="Выбор отделения МФЦ" TextColor="Black" FontSize="16" VerticalOptions="Center" FontFamily="PlayfairDisplay"/>
+                            <Label Text="Выбор отделения МФЦ" TextColor="#E44E34" FontSize="16" VerticalOptions="Center" FontFamily="PlayfairDisplay"/>
                         </StackLayout>
+                        <Label BackgroundColor="#E44E34" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" HeightRequest="2" Grid.Row="9" Grid.Column="0" />
                         <Label BackgroundColor="#bababa" Grid.Row="11" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" HeightRequest="2" Grid.Column="1" Grid.ColumnSpan="2"/>
                         <Label Text="Выйти" Grid.Row="12" FontFamily="PlayfairDisplay" TextColor="Black" FontSize="14" Grid.Column="2" />
                     </Grid>

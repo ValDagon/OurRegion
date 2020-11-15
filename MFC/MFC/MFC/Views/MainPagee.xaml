@@ -109,7 +109,7 @@
                     <Label Text="Редактировать" TextColor="Gray" Grid.Column="2" Grid.Row="2" FontSize="12" VerticalOptions="Center" TextDecorations="Underline"
                                         FontFamily="Lora"/>
                     <Label BackgroundColor="#bababa" Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="4" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" HeightRequest="2"  />
-                    <Grid Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="5" RowDefinitions="20,30,20,30,20,30,20,30,20,1,23,20,30" ColumnDefinitions="10,10,180">
+                    <Grid Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="5" RowDefinitions="20,30,20,30,20,30,20,30,20,50,20,1,23,20,30" ColumnDefinitions="10,10,180">
                         <StackLayout Orientation="Horizontal" Grid.Row="1" Grid.Column="2">
                             <StackLayout.GestureRecognizers>
                                 <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
@@ -138,8 +138,14 @@
                             </StackLayout.GestureRecognizers>
                             <Label Text="Платежи" TextColor="Black" FontSize="16" VerticalOptions="Center" FontFamily="PlayfairDisplay"/>
                         </StackLayout>
-                        <Label BackgroundColor="#bababa" Grid.Row="9" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" HeightRequest="2" Grid.Column="1" Grid.ColumnSpan="2"/>
-                        <Label Text="Выйти из аккаунта" Grid.Row="10" FontFamily="PlayfairDisplay" TextColor="Black" FontSize="14" Grid.Column="2" />
+                        <StackLayout Orientation="Horizontal" Grid.Row="9" Grid.Column="2">
+                            <StackLayout.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_4"/>
+                            </StackLayout.GestureRecognizers>
+                            <Label Text="Выбор отделения МФЦ" TextColor="Black" FontSize="16" VerticalOptions="Center" FontFamily="PlayfairDisplay"/>
+                        </StackLayout>
+                        <Label BackgroundColor="#bababa" Grid.Row="11" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" HeightRequest="2" Grid.Column="1" Grid.ColumnSpan="2"/>
+                        <Label Text="Выйти" Grid.Row="12" FontFamily="PlayfairDisplay" TextColor="Black" FontSize="14" Grid.Column="2" />
                     </Grid>
                 </Grid>
             </Grid>

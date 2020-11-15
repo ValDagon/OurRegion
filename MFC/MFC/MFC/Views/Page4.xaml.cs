@@ -11,14 +11,13 @@ using Xamarin.Forms.Xaml;
 namespace MFC.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Page3 : ContentPage
+    public partial class Page4 : ContentPage
     {
-        public Page3()
+        public Page4()
         {
             NavigationPage.SetHasNavigationBar(this, false);//уберает верхний бар
             InitializeComponent();
         }
-
         private void OpenMenu()
         {
             MenuGrid.IsVisible = true;
@@ -75,6 +74,7 @@ namespace MFC.Views
             CloseMenu();
             Application.Current.MainPage = new NavigationPage(new Page2());
         }
+
         private void TapGestureRecognizer_Tapped_4(object sender, EventArgs e)
         {
             CloseMenu();
