@@ -3,13 +3,123 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:vm="clr-namespace:MFC.ViewModel"
              mc:Ignorable="d"
              x:Class="MFC.Views.Page3">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
-    </ContentPage.Content>
+    <ContentPage.BindingContext>
+        <vm:MainViewModel x:Name="vm"/>
+    </ContentPage.BindingContext>
+
+    <Grid>
+        <ScrollView>
+            <Grid RowDefinitions="Auto,   *" RowSpacing="30" Padding="30">
+            <Grid ColumnDefinitions="Auto, *, Auto">
+                <ImageButton Source="menu.png" BackgroundColor="Transparent" VerticalOptions="Center" 
+                             HeightRequest="24" WidthRequest="24" Clicked="MenuTapped"/>
+                    <Label Grid.Column="1"  Text="Информация МФЦ" FontSize="22" FontFamily="PlayfairDisplay" TextColor="Black"
+                       VerticalOptions="Center" HorizontalOptions="Center"/>
+                <Image Grid.Column="2" Source="More.png" VerticalOptions="Center" HeightRequest="24" WidthRequest="24"/>
+            </Grid>
+            
+                <StackLayout Grid.Row="1">
+                <Label Text="Контакты" Grid.Row="0" TextColor="#2D2942" FontSize="20" FontAttributes="Bold" VerticalOptions="Start" FontFamily="Lora" />
+                <Label BackgroundColor="#bababa" Grid.Row="0" HorizontalOptions="FillAndExpand" VerticalOptions="Center" HeightRequest="1" />
+                <StackLayout Orientation="Horizontal"  VerticalOptions="Start">
+                    <Image Source="icon303.png"/>
+                    <Label HorizontalOptions="Start"  Text="Оренбург" FontSize="14" FontFamily="Lora" />
+                </StackLayout>
+                <Label Text="МФЦ для бизнеса: Шарлыкское шоссе, 1/2(6 галерея мегамаолла 'Армада',центр 'Мой бизнес')" FontSize="14" FontFamily="Lora"/>
+                <StackLayout Orientation="Horizontal"  VerticalOptions="Start">
+                    <Image Source="icon304.png"/>
+                    <Label Text="mfc@mail.orb.ru" FontSize="14" HorizontalOptions="Start"  FontFamily="Lora"/>
+                </StackLayout>
+                <Label Text="Часы работы" Grid.Row="0" TextColor="#2D2942" FontSize="20" FontAttributes="Bold" VerticalOptions="Start" FontFamily="Lora" />
+                <Label BackgroundColor="#bababa" Grid.Row="0" HorizontalOptions="FillAndExpand" VerticalOptions="Center" HeightRequest="1" />
+                <Grid RowDefinitions="40,40,40,40,40,40,40" ColumnDefinitions="*,120">
+                    <BoxView BackgroundColor="#E44E34" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"/>
+                    <Label Text="Понедельник" VerticalOptions="Center" HorizontalOptions="Center" FontFamily="PlayfairDisplay" TextColor="White" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="1"/>
+                    <Label Text="8.30-20.30" VerticalOptions="Center" HorizontalOptions="Center" FontFamily="PlayfairDisplay" TextColor="White" Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="1"/>
+                    <BoxView BackgroundColor="#C79B65" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2"/>
+                    <Label Text="Вторник" VerticalOptions="Center" HorizontalOptions="Center" FontFamily="PlayfairDisplay" TextColor="White" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="1"/>
+                    <Label Text="8.30-20.00" VerticalOptions="Center" HorizontalOptions="Center" FontFamily="PlayfairDisplay" TextColor="White" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="1"/>
+                    <BoxView BackgroundColor="#E44E34" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2"/>
+                    <Label Text="Среда" VerticalOptions="Center" HorizontalOptions="Center" FontFamily="PlayfairDisplay" TextColor="White" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="1"/>
+                    <Label Text="8.30-20.30" VerticalOptions="Center" HorizontalOptions="Center" FontFamily="PlayfairDisplay" TextColor="White" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="1"/>
+                    <BoxView BackgroundColor="#C79B65" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2"/>
+                    <Label Text="Четверг" VerticalOptions="Center" HorizontalOptions="Center" FontFamily="PlayfairDisplay" TextColor="White" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="1"/>
+                    <Label Text="8.30-20.30" VerticalOptions="Center" HorizontalOptions="Center" FontFamily="PlayfairDisplay" TextColor="White" Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="1"/>
+                    <BoxView BackgroundColor="#E44E34" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2"/>
+                    <Label Text="Пятница" VerticalOptions="Center" HorizontalOptions="Center" FontFamily="PlayfairDisplay" TextColor="White" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="1"/>
+                    <Label Text="8.30-20.30" VerticalOptions="Center" HorizontalOptions="Center" FontFamily="PlayfairDisplay" TextColor="White" Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="1"/>
+                    <BoxView BackgroundColor="#C79B65" Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2"/>
+                    <Label Text="Суббота" VerticalOptions="Center" HorizontalOptions="Center" FontFamily="PlayfairDisplay" TextColor="White" Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="1"/>
+                    <Label Text="8.30-17.30" VerticalOptions="Center" HorizontalOptions="Center" FontFamily="PlayfairDisplay" TextColor="White" Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="1"/>
+                    <BoxView BackgroundColor="#E44E34" Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="2"/>
+                    <Label Text="Воскресенье" VerticalOptions="Center" HorizontalOptions="Center" FontFamily="PlayfairDisplay" TextColor="White" Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="1"/>
+                    <Label Text="Выходной" VerticalOptions="Center" HorizontalOptions="Center" FontFamily="PlayfairDisplay" TextColor="White" Grid.Row="6" Grid.Column="1" Grid.ColumnSpan="1"/>
+                </Grid>
+                <Label Text="Геолокация" Grid.Row="0" TextColor="#2D2942" FontSize="20" FontAttributes="Bold" VerticalOptions="Start" FontFamily="Lora" />
+                <Label BackgroundColor="#bababa" Grid.Row="0" HorizontalOptions="FillAndExpand" VerticalOptions="Center" HeightRequest="1" />
+                <Image Source="icon305.png" />
+            </StackLayout>
+            
+
+        </Grid>
+        </ScrollView>
+        <Grid x:Name="MenuGrid" IsVisible="False">
+            <BoxView x:Name="MenuOverlay" BackgroundColor="Black" Opacity="0.35">
+                <BoxView.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OverlayTapped"/>
+                </BoxView.GestureRecognizers>
+            </BoxView>
+            <Grid x:Name="MenuView" WidthRequest="260" BackgroundColor="#FFFFFF" 
+                  HorizontalOptions="Start" TranslationX="-260">
+                <Grid.Clip>
+                    <PathGeometry Figures="M0,0V511.043H140.714l86.992-116.012V0Z"/>
+                </Grid.Clip>
+                <Grid ColumnDefinitions="10,40,130" RowDefinitions="20,20,20,1,*" HorizontalOptions="Start" VerticalOptions="Start" Margin="0,20">
+                    <Image Source="Icon0person.png"  Grid.Column="1"  Grid.RowSpan="3"  Margin="0,0,5,0"/>
+                    <Label Text="Блинов Кирилл" Grid.Column="2" Grid.Row="0" FontSize="14" VerticalOptions="Center" TextColor="Gray"
+                                        FontFamily="Lora"/>
+                    <Label Text="Алексеевич" Grid.Column="2" Grid.Row="1" FontSize="14" VerticalOptions="Center" TextColor="Gray"
+                                        FontFamily="Lora"/>
+                    <Label Text="Редактировать" TextColor="Gray" Grid.Column="2" Grid.Row="2" FontSize="12" VerticalOptions="Center" TextDecorations="Underline"
+                                        FontFamily="Lora"/>
+                    <Label BackgroundColor="#bababa" Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="4" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" HeightRequest="2"  />
+                    <Grid Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="5" RowDefinitions="20,30,20,30,20,30,20,30,20,1,23,20,30" ColumnDefinitions="10,10,180">
+                        <StackLayout Orientation="Horizontal" Grid.Row="1" Grid.Column="2">
+                            <StackLayout.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </StackLayout.GestureRecognizers>
+                            <Label Text="Главная" TextColor="Black" FontSize="16" VerticalOptions="Center" FontFamily="PlayfairDisplay"/>
+                        </StackLayout>
+                        <!--<Label Text="Главная" TextColor="Black" FontSize="16" VerticalOptions="Center" FontFamily="PlayfairDisplay" Grid.Row="1" Grid.Column="2"/>-->                     
+                        <StackLayout Orientation="Horizontal" Grid.Row="3" Grid.Column="2">
+                            <StackLayout.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_1"/>
+                            </StackLayout.GestureRecognizers>
+                            <Label Text="Статус заявления" TextColor="Black" FontSize="16" VerticalOptions="Center" FontFamily="PlayfairDisplay"/>
+                        </StackLayout>
+                        <!--<Label Text="Статус заявления" TextColor="Black" FontSize="16" VerticalOptions="Center" Grid.Row="3" FontFamily="PlayfairDisplay" Grid.Column="2"/>-->
+                        <StackLayout Orientation="Horizontal" Grid.Row="5" Grid.Column="2">
+                            <StackLayout.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_2"/>
+                            </StackLayout.GestureRecognizers>
+                            <Label Text="Информация МФЦ" TextColor="#E44E34" FontSize="16" VerticalOptions="Center" FontFamily="PlayfairDisplay"/>
+                        </StackLayout>
+                        <Label BackgroundColor="#E44E34" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" HeightRequest="2" Grid.Row="5" Grid.Column="0" />
+                        <!--<Label Text="Информация МФЦ" TextColor="Black" FontSize="16" VerticalOptions="Center" Grid.Row="5" FontFamily="PlayfairDisplay" Grid.Column="2"/>-->
+                        <StackLayout Orientation="Horizontal" Grid.Row="7" Grid.Column="2">
+                            <StackLayout.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_3"/>
+                            </StackLayout.GestureRecognizers>
+                            <Label Text="Платежи" TextColor="Black" FontSize="16" VerticalOptions="Center" FontFamily="PlayfairDisplay"/>
+                        </StackLayout>
+                        <Label BackgroundColor="#bababa" Grid.Row="9" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" HeightRequest="2" Grid.Column="1" Grid.ColumnSpan="2"/>
+                        <Label Text="Выйти из аккаунта" Grid.Row="10" FontFamily="PlayfairDisplay" TextColor="Black" FontSize="14" Grid.Column="2" />
+                    </Grid>
+                </Grid>
+            </Grid>
+        </Grid>
+    </Grid>
 </ContentPage>
