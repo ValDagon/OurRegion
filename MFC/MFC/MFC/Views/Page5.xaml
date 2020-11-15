@@ -22,18 +22,18 @@
 
                 <StackLayout Grid.Row="1">
                     <Label Text="Фамилия" TextColor="Black" FontSize="18" FontAttributes="Bold" VerticalOptions="Start" FontFamily="PlayfairDisplay" Margin="10" />
-                    <Entry Text="Блинов" />
+                    <Entry x:Name="LastName" Text="Блинов" />
                     <Label Text="Имя" Grid.Row="0" TextColor="Black"  FontSize="18" FontAttributes="Bold" VerticalOptions="Start" FontFamily="PlayfairDisplay" Margin="10" />
-                    <Entry Text="Кирилл"/>
+                    <Entry x:Name="FirstName" Text="Кирилл"/>
                     <Label Text="Отчество" Grid.Row="0" TextColor="Black"  FontSize="18" FontAttributes="Bold" VerticalOptions="Start" FontFamily="PlayfairDisplay" Margin="10" />
-                    <Entry Text="Алексеевич"/>
+                    <Entry x:Name="ThirdName" Text="Алексеевич"/>
                     <Label Text="СНИЛС" Grid.Row="0" TextColor="Black"  FontSize="18" FontAttributes="Bold" VerticalOptions="Start" FontFamily="PlayfairDisplay" Margin="10" />
-                    <Entry Text="888-788-388 00"/>
+                    <Entry x:Name="SNILS" Text="888-788-388 00"/>
                     <Label Text="Электронная почта" Grid.Row="0" TextColor="Black"  FontSize="18" FontAttributes="Bold" VerticalOptions="Start" FontFamily="PlayfairDisplay" Margin="10" />
-                    <Entry Text="KirillBlinov00@mail.ru"/>
+                    <Entry x:Name="Email" Text="KirillBlinov00@mail.ru"/>
                     <Label Text="Контактный номер телефона" Grid.Row="0" TextColor="Black"  FontSize="18" FontAttributes="Bold" VerticalOptions="Start" FontFamily="PlayfairDisplay" Margin="10" />
-                    <Entry Text="+79033933150"/>
-                    <Button Text="Сохранить данные" FontSize="14" Background="#E44E34" Grid.Row="2" HorizontalOptions="FillAndExpand" VerticalOptions="End"  HeightRequest="40" CornerRadius="16"/>
+                    <Entry x:Name="PhoneNumber" Text="+79033933150"/>
+                    <Button Clicked="Button_Clicked" Text="Сохранить данные" FontSize="14" Background="#E44E34" Grid.Row="2" HorizontalOptions="FillAndExpand" VerticalOptions="End"  HeightRequest="40" CornerRadius="16"/>
                 </StackLayout>
 
 

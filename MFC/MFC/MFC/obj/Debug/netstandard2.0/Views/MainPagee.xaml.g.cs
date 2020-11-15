@@ -29,12 +29,16 @@ namespace MFC.Views {
         private global::Xamarin.Forms.Grid MenuView;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
+        private global::Xamarin.Forms.Label ThirdNameMP;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
             global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(MainPagee));
             vm = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::MFC.ViewModel.MainViewModel>(this, "vm");
             MenuGrid = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Grid>(this, "MenuGrid");
             MenuOverlay = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.BoxView>(this, "MenuOverlay");
             MenuView = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Grid>(this, "MenuView");
+            ThirdNameMP = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Label>(this, "ThirdNameMP");
         }
     }
 }
