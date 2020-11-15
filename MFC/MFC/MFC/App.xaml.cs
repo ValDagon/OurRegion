@@ -17,6 +17,7 @@ namespace MFC
             // MainPage = new SharedTransitionNavigationPage(new TravelIndustry());
             //MainPage = new SharedTransitionNavigationPage(new MainPagee());
             MainPage = new MainPagee();
+           
         }
 
         protected override void OnStart()

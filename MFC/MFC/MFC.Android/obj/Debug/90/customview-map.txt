@@ -28,6 +28,7 @@ changeClipBounds;C:\Users\HP\Desktop\MFC\OurRegion\MFC\MFC\MFC.Android\obj\Debug
 changeImageTransform;C:\Users\HP\Desktop\MFC\OurRegion\MFC\MFC\MFC.Android\obj\Debug\90\lp\1\jl\res\transition\navigation_transition.xml
 changeTransform;C:\Users\HP\Desktop\MFC\OurRegion\MFC\MFC\MFC.Android\obj\Debug\90\lp\1\jl\res\transition\navigation_transition.xml
 color;obj\Debug\90\res\values\colors.xml
+crc64720bb2db43a66fe9.FormsViewPager;C:\Users\HP\Desktop\MFC\OurRegion\MFC\MFC\MFC.Android\obj\Debug\90\lp\40\jl\res\layout\rootlayout.xml
 declare-styleable;C:\Users\HP\Desktop\MFC\OurRegion\MFC\MFC\MFC.Android\obj\Debug\90\lp\40\jl\res\values\attrs.xml
 external-cache-path;C:\Users\HP\Desktop\MFC\OurRegion\MFC\MFC\MFC.Android\obj\Debug\90\lp\39\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
 external-path;C:\Users\HP\Desktop\MFC\OurRegion\MFC\MFC\MFC.Android\obj\Debug\90\lp\39\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml

@@ -99,16 +99,21 @@
                 <Grid.Clip>
                     <PathGeometry Figures="M0,0V511.043H140.714l86.992-116.012V0Z"/>
                 </Grid.Clip>
-                <Grid ColumnDefinitions="10,40,130" RowDefinitions="20,20,20,1,*" HorizontalOptions="Start" VerticalOptions="Start" Margin="0,20">
-                    <Image Source="Icon0person.png"  Grid.Column="1"  Grid.RowSpan="3"  Margin="0,0,5,0"/>
-                    <Label Text="Блинов Кирилл" Grid.Column="2" Grid.Row="0" FontSize="14" VerticalOptions="Center" TextColor="Gray"
+                <Grid ColumnDefinitions="10,40,130" RowDefinitions="60,20,*" HorizontalOptions="Start" VerticalOptions="Start" Margin="0,20">
+                    <Image Source="Icon0person.png"  Grid.Column="1"    Margin="0,0,5,0"/>
+                    <StackLayout Grid.Column="2" Grid.Row="0">
+                        <StackLayout.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_5"/>
+                        </StackLayout.GestureRecognizers>
+                        <Label Text="Блинов Кирилл" Grid.Column="2" Grid.Row="0" FontSize="14" VerticalOptions="Center" TextColor="Gray"
                                         FontFamily="Lora"/>
-                    <Label Text="Алексеевич" Grid.Column="2" Grid.Row="1" FontSize="14" VerticalOptions="Center" TextColor="Gray"
+                        <Label Text="Алексеевич" Grid.Column="2" Grid.Row="1" FontSize="14" VerticalOptions="Center" TextColor="Gray"
                                         FontFamily="Lora"/>
-                    <Label Text="Редактировать" TextColor="Gray" Grid.Column="2" Grid.Row="2" FontSize="12" VerticalOptions="Center" TextDecorations="Underline"
+                        <Label Text="Редактировать" TextColor="Gray" Grid.Column="2" Grid.Row="2" FontSize="12" VerticalOptions="Center" TextDecorations="Underline"
                                         FontFamily="Lora"/>
-                    <Label BackgroundColor="#bababa" Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="4" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" HeightRequest="2"  />
-                    <Grid Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="5" RowDefinitions="20,30,20,30,20,30,20,30,20,50,20,1,23,20,30" ColumnDefinitions="10,10,180">
+                    </StackLayout>
+                    <Label BackgroundColor="#bababa" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="4" HorizontalOptions="FillAndExpand" VerticalOptions="End" HeightRequest="1" />
+                    <Grid Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="5" RowDefinitions="20,30,20,30,20,30,20,30,20,50,20,1,23,20,30" ColumnDefinitions="10,10,180">
                         <StackLayout Orientation="Horizontal" Grid.Row="1" Grid.Column="2">
                             <StackLayout.GestureRecognizers>
                                 <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>

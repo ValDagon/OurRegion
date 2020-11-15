@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             xmlns:vm="clr-namespace:MFC.ViewModel"
+             x:Class="MFC.Views.Page5">
+    <ContentPage.BindingContext>
+        <vm:MainViewModel x:Name="vm"/>
+    </ContentPage.BindingContext>
+    <Grid>
+        <ScrollView>
+            <Grid RowDefinitions="Auto,   *" RowSpacing="30" Padding="30">
+                <Grid ColumnDefinitions="Auto, *, Auto">
+                    <ImageButton Source="Arrow.png" BackgroundColor="Transparent" VerticalOptions="Center" 
+                             HeightRequest="24" WidthRequest="24" Clicked="MenuTapped"/>
+                    <Label Grid.Column="1"  Text="Личные данные" FontSize="22" FontFamily="PlayfairDisplay" TextColor="Black"
+                       VerticalOptions="Center" HorizontalOptions="Center"/>
+                    
+                </Grid>
+
+                <StackLayout Grid.Row="1">
+                    <Label Text="Фамилия" TextColor="Black" FontSize="18" FontAttributes="Bold" VerticalOptions="Start" FontFamily="PlayfairDisplay" Margin="10" />
+                    <Entry Text="Блинов" />
+                    <Label Text="Имя" Grid.Row="0" TextColor="Black"  FontSize="18" FontAttributes="Bold" VerticalOptions="Start" FontFamily="PlayfairDisplay" Margin="10" />
+                    <Entry Text="Кирилл"/>
+                    <Label Text="Отчество" Grid.Row="0" TextColor="Black"  FontSize="18" FontAttributes="Bold" VerticalOptions="Start" FontFamily="PlayfairDisplay" Margin="10" />
+                    <Entry Text="Алексеевич"/>
+                    <Label Text="СНИЛС" Grid.Row="0" TextColor="Black"  FontSize="18" FontAttributes="Bold" VerticalOptions="Start" FontFamily="PlayfairDisplay" Margin="10" />
+                    <Entry Text="888-788-388 00"/>
+                    <Label Text="Электронная почта" Grid.Row="0" TextColor="Black"  FontSize="18" FontAttributes="Bold" VerticalOptions="Start" FontFamily="PlayfairDisplay" Margin="10" />
+                    <Entry Text="KirillBlinov00@mail.ru"/>
+                    <Label Text="Контактный номер телефона" Grid.Row="0" TextColor="Black"  FontSize="18" FontAttributes="Bold" VerticalOptions="Start" FontFamily="PlayfairDisplay" Margin="10" />
+                    <Entry Text="+79033933150"/>
+                    <Button Text="Сохранить данные" FontSize="14" Background="#E44E34" Grid.Row="2" HorizontalOptions="FillAndExpand" VerticalOptions="End"  HeightRequest="40" CornerRadius="16"/>
+                </StackLayout>
+
+
+            </Grid>
+        </ScrollView>
+    </Grid>
+</ContentPage>

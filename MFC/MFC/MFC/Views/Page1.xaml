@@ -30,7 +30,7 @@
                     <Label Text="Нет текущих заявлений" TextColor="Gray" FontSize="16" VerticalOptions="Center" FontFamily="PlayfairDisplay" HorizontalOptions="Center" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2"/>
                     
                 </Grid>
-                
+                <Button Text="Получить ПИН-код" FontSize="14" Background="#E44E34" Grid.Row="2" HorizontalOptions="FillAndExpand" VerticalOptions="End"  HeightRequest="40" CornerRadius="16"/>
 
             </Grid>
         </ScrollView>

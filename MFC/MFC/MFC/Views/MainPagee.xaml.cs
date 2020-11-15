@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Plugin.SharedTransitions;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -17,6 +13,7 @@ namespace MFC.Views
             NavigationPage.SetHasNavigationBar(this, false);//уберает верхний бар
             InitializeComponent();
         }
+
         private void OpenMenu()
         {
             MenuGrid.IsVisible = true;
@@ -78,6 +75,13 @@ namespace MFC.Views
         {
             CloseMenu();
             Application.Current.MainPage = new NavigationPage(new Page4());
+        }
+
+        private void TapGestureRecognizer_Tapped_5(object sender, EventArgs e)
+        {
+            CloseMenu();
+             Application.Current.MainPage = new NavigationPage(new Page5());
+           
         }
     }
 }
