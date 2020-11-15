@@ -3,8 +3,9 @@ using Plugin.SharedTransitions;
 using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
-[assembly: ExportFont("Lora-Italic.ttf", Alias = "Lora")]
-[assembly: ExportFont("PlayfairDisplay-Black.ttf", Alias = "PlayfairDisplay")]
+//[assembly: ExportFont("Lora-Italic.ttf", Alias = "Lora")]
+//[assembly: ExportFont("PlayfairDisplay-Black.ttf", Alias = "PlayfairDisplay")]
+
 namespace MFC
 {
     public partial class App : Application
