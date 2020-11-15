@@ -1969,24 +1969,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\HP\\.nuget\\packages\\": {},
+    "C:\\Users\\Valentin\\.nuget\\packages\\": {},
     "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\HP\\Desktop\\MFC\\OurRegion\\MFC\\MFC\\MFC.Android\\MFC.Android.csproj",
+      "projectUniqueName": "D:\\Programming\\Project\\OurRegion\\MFC\\MFC\\MFC.Android\\MFC.Android.csproj",
       "projectName": "MFC.Android",
-      "projectPath": "C:\\Users\\HP\\Desktop\\MFC\\OurRegion\\MFC\\MFC\\MFC.Android\\MFC.Android.csproj",
-      "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\HP\\Desktop\\MFC\\OurRegion\\MFC\\MFC\\MFC.Android\\obj\\",
+      "projectPath": "D:\\Programming\\Project\\OurRegion\\MFC\\MFC\\MFC.Android\\MFC.Android.csproj",
+      "packagesPath": "C:\\Users\\Valentin\\.nuget\\packages\\",
+      "outputPath": "D:\\Programming\\Project\\OurRegion\\MFC\\MFC\\MFC.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Valentin\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -2000,8 +2000,8 @@
       "frameworks": {
         "monoandroid90": {
           "projectReferences": {
-            "C:\\Users\\HP\\Desktop\\MFC\\OurRegion\\MFC\\MFC\\MFC\\MFC.csproj": {
-              "projectPath": "C:\\Users\\HP\\Desktop\\MFC\\OurRegion\\MFC\\MFC\\MFC\\MFC.csproj"
+            "D:\\Programming\\Project\\OurRegion\\MFC\\MFC\\MFC\\MFC.csproj": {
+              "projectPath": "D:\\Programming\\Project\\OurRegion\\MFC\\MFC\\MFC\\MFC.csproj"
             }
           }
         }
